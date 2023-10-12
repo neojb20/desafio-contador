@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class contador {
     public static void main(String[] args) {
+
         Scanner terminal = new Scanner(System.in);
         System.out.println("Digite o primeiro parametro");
         int parametro1 = terminal.nextInt();
@@ -23,6 +24,7 @@ public class contador {
     static void contar(int parametro1, int parametro2) throws ParametrosInvalidosException {
 
         if (parametro2 < parametro1)
+            // excessão para quando o paramentro 1 for maior que o 2.
             throw new ParametrosInvalidosException();
 
         int contagem = parametro2 - parametro1;
